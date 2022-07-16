@@ -17,7 +17,7 @@ pluginManagement {
 
 ## build.gradle
 
-Add these configuration to the build file:
+Add this configuration to the build file:
 
 ```groovy dsl
 plugins {
@@ -46,3 +46,23 @@ bootBuildImage {
 > docker run --rm -p 8080:8080 spring-native-app:0.0.1-SNAPSHOT
 
 > docker run --name spring-native-app -p 8080:8080 spring-native-app:0.0.1-SNAPSHOT
+
+## Compiling Using Native Build Tools
+
+Requirements:
+- Install GraalVM
+- Set GRAALVM_HOME environment variable
+- Install a C developer environment
+- gu install native-image
+
+> gradle nativeCompile
+
+*Make sure to use x64 Native Tools Command Prompt instead of the regular Windows command line to run Maven or Gradle plugins.*
+
+## Run the Application
+
+> target/spring-native-app
+
+## Test Native Application
+
+> gradle nativeTest
