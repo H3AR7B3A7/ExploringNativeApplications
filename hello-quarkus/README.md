@@ -221,3 +221,47 @@ Library:
     - Picocli
     - Quartz, Scheduler
     - Spring integration
+
+## Considerations
+
+Enterprise Java:
+- Spring
+- Jakarta EE
+  - JBoss EAP
+  - Websphere
+  - Weblogic
+
+Microservices:
+- Spring Boot
+- Dropwizard
+- Micronaut
+- Helidon
+- Quarkus integrates with MicroProfile
+
+*MicroProfile is a specification with standard APIs which aims to develop, monitor and secure microservices.*
+
+Mature:
+- Developed by a renowned company
+- Built on mature technologies
+- Well known extensions
+
+Innovative:
+- Developer joy
+- Cloud native
+- Kubernetes native
+
+Pros:
+- Developer joy
+- Testability
+- Performance
+- GraalVM made easy
+- Cloud ready
+- Not only for microservices
+- RedHat support in production
+
+Cons:
+- New and not well-known yet
+- Not Jakarta EE
+- Not for front-end dev
+- Not for mobile app dev
+- Not every java lib compiles with GraalVM
